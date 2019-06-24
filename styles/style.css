@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: wheat;
+}
+
+/********************************************header*************************************************/
+nav {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-brand {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+
+nav ul li a{
+    display: block;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+}
+
+nav a:hover {
+    color: red;
+}
+
+
+
+.cases {
+    display: none;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .nav-brand {
+        text-align: start;
+        padding: 20px;
+        border-right: 3px solid green;
+        float: left;
+        line-height: 20px;
+        margin: 20px;
+    }
+    
+    nav ul {
+        float: left;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        padding: 0 10px;
+        line-height: 100px;
+    }
+    
+    nav ul li a{
+        font-size: 20px;
+        font-weight: 500;
+        color: #111;
+        padding: 0 10px;
+    }
+
+    nav .cases {
+        display: block;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: #111;
+        float: right;
+        line-height: 20px;
+        margin: 25px 50px;
+        padding: 10px 10px;
+        border: 1px solid #111;
+    }
+}
+
+
+
+
+
+
+
+/***********************************************main**************************************/
+
+/**main video {
+    padding-top: 100px;
+    width: 100%;
+}
+**/
+
+main video {
+    display: none;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.main-banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/home.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.main-banner-heading {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    padding-top: 250px;
+    
+}
+
+.main-banner p {
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+.travel {
+    padding: 10px 30px;
+    background-color: #f3f3f3;
+}
+
+.travel p {
+    font-family: 'Catamaran', sans-serif;
+    color: #111;
+    font-size: 20px;
+}
+
+.travel li {
+    font-family: 'PT Sans', sans-serif;
+    list-style-type: square;
+    line-height: 24px;
+}
+
+.offers {
+    font-family: 'Catamaran', sans-serif;
+    color: #111;
+    background-color: #f3f3f3;
+    padding: 10px 10px;
+}
+
+.offers-heading {
+    font-size: 20px;
+}
+
+.offers-card {
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.offers-card .img {
+    width: 100%;
+    height: 60px;
+}
+
+.offers-card p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px;
+    font-style: italic;
+}
+
+.offers-card-btn {
+    padding: 6px;
+    font-family: 'Catamaran', sans-serif;
+    color: white;
+    background-color: tomato;
+    border: red;
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    .main-banner {
+        display: none;
+    }
+
+    main video {
+        display: block;
+        width: 100%;
+    }
+
+    .offers {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .offers-heading {
+        font-size: 20px;
+        padding: 15px;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+    
+    .offers-card {
+        padding: 10px 0;
+    }
+    
+    .offers-card p {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 6px;
+        font-style: italic;
+    }
+    
+    .offers-card-btn {
+        padding: 6px;
+        font-family: 'Catamaran', sans-serif;
+        color: white;
+        background-color: tomato;
+        border: red;
+    }
+
+}
